@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects | Zaenal Wahyudin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">← Back to Home</a>
+      </nav>
+    </header>
+
+    <section class="portfolio">
+      <h2>My Projects</h2>
+
+      <!-- Form Tambah Project -->
+      <div class="add-project">
+        <h3>Add or Edit Your Project</h3>
+        <form id="projectForm">
+          <input type="text" id="title" placeholder="Project Title" required />
+          <textarea
+            id="description"
+            placeholder="Project Description"
+            required
+          ></textarea>
+          <input type="file" id="image" accept="image/*" />
+          <button type="submit">Add Project</button>
+        </form>
+      </div>
+
+      <!-- Grid Project -->
+      <div class="project-grid" id="projectGrid">
+        <div class="project-card">
+          <img src="offline kalkulator.png" alt="Personal Budget Calculator" />
+          <div class="project-details">
+            <h3>Personal Budget Calculator</h3>
+            <p>
+              A simple offline desktop application to track income and expense.
+              Built with Python + Tkinter.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="todolist.png" alt="Dynamic To-Do List" />
+          <div class="project-details">
+            <h3>Dynamic To-Do List Web Application</h3>
+            <p>
+              A modern, simple and dynamic To-Do List built using HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Zaenal Wahyudin. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const projectForm = document.getElementById("projectForm");
+      const projectGrid = document.getElementById("projectGrid");
+
+      // Tambah project baru
+      projectForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const title = document.getElementById("title").value;
+        const description = document.getElementById("description").value;
+        const imageFile = document.getElementById("image").files[0];
+        let imageSrc = "default.png";
+
+        if (imageFile) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            imageSrc = e.target.result;
+            addProject(title, description, imageSrc);
+          };
+          reader.readAsDataURL(imageFile);
+        } else {
+          addProject(title, description, imageSrc);
+        }
+
+        projectForm.reset();
+      });
+
+      function addProject(title, description, imageSrc) {
+        const card = document.createElement("div");
+        card.classList.add("project-card");
+
+        card.innerHTML = `
+          <img src="${imageSrc}" alt="${title}">
+          <div class="project-details">
+            <h3 contenteditable="true">${title}</h3>
+            <p contenteditable="true">${description}</p>
+            <button class="delete-btn">Delete</button>
+          </div>
+        `;
+
+        card.querySelector(".delete-btn").addEventListener("click", () => {
+          card.remove();
+        });
+
+        projectGrid.appendChild(card);
+      }
+    </script>
+  </body>
+</html>

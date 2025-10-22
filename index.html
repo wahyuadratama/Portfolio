@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaenal Wahyudin | Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+    <link rel="icon" type="image/png" href="favicon2.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="icon.jpg" alt="Logo" class="logo-icon" />
+          <span>Zaenal Wahyudin | Portfolio</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home / Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 style="color: white;">Welcome to My Portfolio</h1>
+          <p style="color: white;">I'm a passionate web developer.</p>
+          <a href="portfolio.html" class="hero-btn">View My Work</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="about-content">
+          <img src="profil1.jpg" alt="Profile Picture" />
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              An undergraduate student of Alma Ata University Yogyakarta
+              majoring in Informatics. A detail oriented programmer with
+              experience in developing web and mobile applications. Possesses
+              strong skills in programming, debugging, and managing projects
+              using Agile methodologies. I am passionate about learning new
+              technologies and continuously innovating to deliver efficient
+              digital solutions.
+            </p>
+            <p>Skills: HTML, CSS, JavaScript, React</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio / Projects Section -->
+      <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <!-- Project cards will be dynamically loaded here -->
+        </div>
+      </section>
+
+    
+  <section id="resume" class="resume">
+  <!-- Education Section -->
+  <div class="education-section">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Education 2010 - 2016</h3>
+        <p>Salam Praja Elementary School | Bandung Barat, Indonesia</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Education 2016 - 2022</h3>
+        <p>Darul Mukhlisin Islamic Boarding School | Bandung Barat, Indonesia</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Education 2024 - Present</h3>
+        <p>Alma Ata University Informatics Engineering | Yogyakarta, Indonesia</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="experience-section">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Web Developer Intern (2023)</h3>
+        <p>Freelance | Developed a portfolio website using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>UI Designer (2024)</h3>
+        <p>Designed intuitive web interfaces using Figma and Adobe XD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!---achievements section -->
+<section class="achievements-section">
+  <div class="achievements-section">
+    <div class="achievement-header">
+      <h2><i class="fas fa-medal"></i> Achievements / Certificate</h2>
+  </div>
+
+    <div class="certificate-container">
+      <div class="certificate-card">
+        <img src="CER 2.png" alt="Dicoding Certificate">
+        <h3>Front-End Developer Learning Path</h3>
+        <p>Dicoding Indonesia | 2024</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="CER 1.png" alt="Hackathon Award">
+        <h3>Hackathon 2025 Winner</h3>
+        <p>Google Developer Student Club | 2025</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="CER 3.png" alt="Coursera Certificate">
+        <h3>AI for Everyone</h3>
+        <p>Coursera | 2024</p>
+      </div>
+    </div>
+
+    <div class="add-project-container">
+      <button id="addCertBtn">+Add Certificate</button>
+    </div>
+      <!-- Form popup -->
+  <div class="cert-form" id="certForm">
+    <h3>Add New Certificate</h3>
+    <input type="text" id="certTitle" placeholder="Certificate Title" required>
+    <input type="text" id="certIssuer" placeholder="Issuer (e.g. Dicoding, Coursera)" required>
+    <input type="text" id="certYear" placeholder="Year (e.g. 2024)" required>
+    <input type="text" id="certImage" placeholder="Image URL" required>
+    <div class="form-buttons">
+      <button id="saveCert">Save</button>
+      <button id="cancelCert">Cancel</button>
+    </div>
+  </div>
+</div>
+ <!-- Grid sertifikat muncul di sini -->
+  <div class="cert-grid" id="certGrid"></div>
+  </section>
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xnngonvb" method="POST">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+          <a href="https://www.instagram.com/alquee_rlsm/"
+            ><img src="Instagram 1.png" alt="Instagram"
+          /></a>
+          <a href="https://github.com/wahyuadratama"
+            ><img src="github.png" alt="Faceebook"
+          /></a>
+          <a href="https://www.linkedin.com/in/zaenal-wahyudin-39b3a3313/"
+            ><img src="Linkedin 3.png" alt="LinkedIn"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
