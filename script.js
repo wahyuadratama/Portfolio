@@ -135,16 +135,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Toggle navbar di mobile
-const menuToggle = document.getElementById("menu-toggle");
+const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
-
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("active");
 });
