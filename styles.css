@@ -523,9 +523,9 @@ header .logo:hover {
   margin-bottom: 25px;
   text-align: center;
 }
-.achievements-header i{
+.achievements-header i {
   font-size: 28px;
-  color:#222
+  color: #222;
 }
 .achievements-header h2 {
   font-size: 1.8rem;
@@ -623,7 +623,6 @@ header .logo:hover {
   background: #ccc;
 }
 
-
 /* ===== NAVBAR FIX RESPONSIVE ===== */
 .navbar {
   display: flex;
@@ -636,13 +635,25 @@ header .logo:hover {
   width: 100%;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.logo h1 {
+  font-size: 1rem; /* atur ukuran tulisan di navbar */
+  font-weight: 600; /* biar tetap tegas tapi nggak terlalu tebal */
+  color: white; /* pastikan tetap kontras di background gelap */
+  margin: 0; /* hapus jarak default */
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 0.9rem; /* sedikit lebih kecil di HP */
+  }
 }
 
 .logo img {

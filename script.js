@@ -9,7 +9,6 @@ document.querySelectorAll(".nav-link").forEach((anchor) => {
   });
 });
 
-
 // Dynamic loading of project cards
 const projectData = [
   {
@@ -58,12 +57,12 @@ timelineData.forEach((item) => {
   timeline.appendChild(timelineCard);
 });
 
-document.getElementById('addProjectBtn').addEventListener('click', function() {
-  alert('Fitur tambah project akan datang! 🚀');
+document.getElementById("addProjectBtn").addEventListener("click", function () {
+  alert("Fitur tambah project akan datang! 🚀");
 });
 
-document.getElementById('addCertBtn').addEventListener('click', function() {
-  alert('Fitur tambah sertifikat akan datang! 🏆');
+document.getElementById("addCertBtn").addEventListener("click", function () {
+  alert("Fitur tambah sertifikat akan datang! 🏆");
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -135,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ===== TOGGLE MENU MOBILE =====
+// Toggle navbar di mobile
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
