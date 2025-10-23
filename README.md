@@ -51,8 +51,8 @@ GitHub Pages will automatically redeploy your latest changes.
 ---
 
 ## 📫 Contact
-💼 **Name:** Wahyu Adratama  
-📧 **Email:** wahyuadratama@example.com  
+💼 **Name:** WahyuAdratama  
+📧 **Email:**zaenalwahyudin270@gmail.com
 🌐 **Portfolio:** [https://wahyuadratama.github.io/Portfolio/](https://wahyuadratama.github.io/Portfolio/)  
 🔗 **GitHub:** [https://github.com/wahyuadratama](https://github.com/wahyuadratama)
 
