@@ -240,6 +240,14 @@ Customize colors and fonts in `css/style.css`:
 
 ---
 
+## 📫 Contact
+💼 **Name:** WahyuAdratama  
+📧 **Email:** zaenalwahyudin270@gmail.com
+🌐 **Portfolio:** [https://wahyuadratama.github.io/Portfolio/](https://wahyuadratama.github.io/Portfolio/)  
+🔗 **GitHub:** [https://github.com/wahyuadratama](https://github.com/wahyuadratama)
+
+---
+
 ## 📈 Performance Metrics
 
 - **Lighthouse Score:** 95+ (Performance, Accessibility, Best Practices, SEO)
