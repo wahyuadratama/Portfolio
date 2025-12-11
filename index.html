@@ -1,216 +1,429 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zaenal Wahyudin | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="icon" type="image/png" href="favicon2.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="profil1.jpg" alt="Logo" />
-        <h1>Zaenal Wahyudin | Portfolio</h1>
-      </div>
-
-      <!-- Tombol hamburger -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- Daftar menu -->
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-
-    <main>
-      
-      <!-- Home / Hero Section -->
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h1 style="color: ">Welcome to My Portfolio</h1>
-          <p style="color: ">I'm a passionate web developer.</p>
-          <a href="portfolio.html" class="hero-btn">View My Work</a>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Zaenal Wahyudin - Web Developer & UI Designer specializing in modern web applications and user interface design">
+    <meta name="keywords" content="web developer, UI designer, portfolio, JavaScript, HTML, CSS, React, frontend developer, Indonesia">
+    <meta name="author" content="Zaenal Wahyudin">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaenalwahyudin.github.io/portfolio/">
+    <meta property="og:title" content="Zaenal Wahyudin | Web Developer & UI Designer">
+    <meta property="og:description" content="Portfolio showcasing modern web development projects and UI design work by Zaenal Wahyudin">
+    <meta property="og:image" content="https://zaenalwahyudin.github.io/portfolio/images/profil1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Zaenal Wahyudin Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zaenalwahyudin.github.io/portfolio/">
+    <meta property="twitter:title" content="Zaenal Wahyudin | Web Developer & UI Designer">
+    <meta property="twitter:description" content="Portfolio showcasing modern web development projects and UI design work">
+    <meta property="twitter:image" content="https://zaenalwahyudin.github.io/portfolio/images/profil1.jpg">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#0046FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ZW Portfolio">
+    <link rel="manifest" href="manifest.json">
+    
+    <title>Zaenal Wahyudin | Web Developer & UI Designer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <link rel="apple-touch-icon" href="images/favicon2.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/profil1.jpg" alt="Profile" class="logo-img">
+                <span class="logo-text">Zaenal Wahyudin</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </section>
+    </nav>
 
-      <!-- About Section -->
-      <section id="about" class="about">
-        <div class="about-content">
-          <img src="profil1.jpg" alt="Profile Picture" />
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-              An undergraduate student of Alma Ata University Yogyakarta
-              majoring in Informatics. A detail oriented programmer with
-              experience in developing web and mobile applications. Possesses
-              strong skills in programming, debugging, and managing projects
-              using Agile methodologies. I am passionate about learning new
-              technologies and continuously innovating to deliver efficient
-              digital solutions.
-            </p>
-            <p>Skills: HTML, CSS, JavaScript, React</p>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Zaenal Wahyudin</span>
+                </h1>
+                <p class="hero-subtitle">Web Developer & UI Designer</p>
+                <p class="hero-description">
+                    Passionate about creating beautiful, functional, and user-friendly digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/profil1.jpg" alt="Zaenal Wahyudin" class="profile-img">
+            </div>
         </div>
-      </section>
-
-      <!-- Portfolio / Projects Section -->
-      <section id="portfolio" class="portfolio">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-          <!-- Project cards will be dynamically loaded here -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
-      </section>
+    </section>
 
-      <section id="resume" class="resume">
-        <!-- Education Section -->
-        <div class="education-section">
-          <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>Education 2010 - 2016</h3>
-              <p>Salam Praja Elementary School | Bandung Barat, Indonesia</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
-            <div class="timeline-item">
-              <h3>Education 2016 - 2022</h3>
-              <p>
-                Darul Mukhlisin Islamic Boarding School | Bandung Barat,
-                Indonesia
-              </p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        An undergraduate student of Alma Ata University Yogyakarta majoring in Informatics. 
+                        A detail-oriented programmer with experience in developing web and mobile applications.
+                    </p>
+                    <p class="about-description">
+                        I possess strong skills in programming, debugging, and managing projects using Agile methodologies. 
+                        I am passionate about learning new technologies and continuously innovating to deliver efficient digital solutions.
+                    </p>
+                    
+                    <div class="skills slide-in-left">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item fade-in">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats slide-in-right">
+                    <div class="stat-item fade-in pulse">
+                        <h3 class="stat-number">2</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat-item fade-in pulse">
+                        <h3 class="stat-number">10</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-item fade-in pulse">
+                        <h3 class="stat-number">3</h3>
+                        <p class="stat-label">Certificates</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-              <h3>Education 2024 - Present</h3>
-              <p>
-                Alma Ata University Informatics Engineering | Yogyakarta,
-                Indonesia
-              </p>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Experience Section -->
-        <div class="experience-section">
-          <h2><i class="fas fa-briefcase"></i> Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>Web Developer Intern (2023)</h3>
-              <p>
-                Freelance | Developed a portfolio website using HTML, CSS, and
-                JavaScript.
-              </p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <p class="section-subtitle">Recent projects I've worked on</p>
             </div>
-            <div class="timeline-item">
-              <h3>UI Designer (2024)</h3>
-              <p>Designed intuitive web interfaces using Figma and Adobe XD.</p>
+            
+            <div class="portfolio-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ui">UI Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
             </div>
-          </div>
+            
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
         </div>
-      </section>
-      <!---achievements section -->
-      <section class="achievements-section">
-        <div class="achievements-section">
-          <div class="achievement-header">
-            <h2><i class="fas fa-medal"></i> Achievements / Certificate</h2>
-          </div>
+    </section>
 
-          <div class="certificate-container">
-            <div class="certificate-card">
-              <img src="CER 2.png" alt="Dicoding Certificate" />
-              <h3>Front-End Developer Learning Path</h3>
-              <p>Dicoding Indonesia | 2024</p>
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Resume</h2>
+                <p class="section-subtitle">Education & Experience</p>
             </div>
-
-            <div class="certificate-card">
-              <img src="CER 1.png" alt="Hackathon Award" />
-              <h3>Hackathon 2025 Winner</h3>
-              <p>Google Developer Student Club | 2025</p>
+            
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3 class="resume-column-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Informatics Engineering</h4>
+                                <p>Alma Ata University, Yogyakarta</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016 - 2022</div>
+                            <div class="timeline-content">
+                                <h4>Islamic Boarding School</h4>
+                                <p>Darul Mukhlisin, Bandung Barat</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2010 - 2016</div>
+                            <div class="timeline-content">
+                                <h4>Elementary School</h4>
+                                <p>Salam Praja, Bandung Barat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-column">
+                    <h3 class="resume-column-title">
+                        <i class="fas fa-briefcase"></i>
+                        Experience
+                    </h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h4>UI Designer</h4>
+                                <p>Designed intuitive web interfaces using Figma and Adobe XD</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h4>Web Developer Intern</h4>
+                                <p>Freelance - Developed portfolio website using HTML, CSS, and JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="certificate-card">
-              <img src="CER 3.png" alt="Coursera Certificate" />
-              <h3>AI for Everyone</h3>
-              <p>Coursera | 2024</p>
-            </div>
-          </div>
-
-          <div class="add-project-container">
-            <button id="addCertBtn">+Add Certificate</button>
-          </div>
-          <!-- Form popup -->
-          <div class="cert-form" id="certForm">
-            <h3>Add New Certificate</h3>
-            <input
-              type="text"
-              id="certTitle"
-              placeholder="Certificate Title"
-              required
-            />
-            <input
-              type="text"
-              id="certIssuer"
-              placeholder="Issuer (e.g. Dicoding, Coursera)"
-              required
-            />
-            <input
-              type="text"
-              id="certYear"
-              placeholder="Year (e.g. 2024)"
-              required
-            />
-            <input
-              type="text"
-              id="certImage"
-              placeholder="Image URL"
-              required
-            />
-            <div class="form-buttons">
-              <button id="saveCert">Save</button>
-              <button id="cancelCert">Cancel</button>
-            </div>
-          </div>
         </div>
-        <!-- Grid sertifikat muncul di sini -->
-        <div class="cert-grid" id="certGrid"></div>
-      </section>
+    </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xnngonvb" method="POST">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea name="message" placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-        <div class="social-media">
-          <a href="https://www.instagram.com/alquee_rlsm/"
-            ><img src="Instagram 1.png" alt="Instagram"
-          /></a>
-          <a href="https://github.com/wahyuadratama"
-            ><img src="github.png" alt="Faceebook"
-          /></a>
-          <a href="https://www.linkedin.com/in/zaenal-wahyudin-39b3a3313/"
-            ><img src="Linkedin 3.png" alt="LinkedIn"
-          /></a>
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-medal"></i>
+                    Certificates & Achievements
+                </h2>
+                <p class="section-subtitle">My learning journey and accomplishments</p>
+            </div>
+            
+            <div class="certificates-grid" id="certificates-grid">
+                <!-- Certificates will be loaded dynamically -->
+            </div>
+            
+            <div class="add-certificate fade-in">
+                <button class="btn btn-outline pulse" id="add-cert-btn">
+                    <i class="fas fa-plus"></i>
+                    Add Certificate
+                </button>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>zaenalwahyudin270@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(+62) 838-9593-7947</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Yogyakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/alquee_rlsm/" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/wahyuadratama" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zaenal-wahyudin-39b3a3313/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form slide-in-right glow" action="https://formspree.io/f/xnngonvb" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Zaenal Wahyudin. All rights reserved.</p>
+                <p>Made with <i class="fas fa-coffee"></i> Kang Tidur</p>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Certificate Modal -->
+    <div class="modal" id="cert-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Certificate</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            
+            <form class="cert-form" id="cert-form">
+                <div class="form-group">
+                    <input type="text" id="cert-title" placeholder="Certificate Title" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="cert-issuer" placeholder="Issuer (e.g., Dicoding, Coursera)" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="cert-year" placeholder="Year (e.g., 2024)" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="url" id="cert-image" placeholder="Image URL" required>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Save Certificate</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-cert">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div class="image-modal" id="image-modal">
+        <span class="image-modal-close" id="image-modal-close">&times;</span>
+        <div class="image-modal-content">
+            <img id="modal-image" src="" alt="Certificate Preview">
+            <div class="image-modal-title" id="modal-title"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>

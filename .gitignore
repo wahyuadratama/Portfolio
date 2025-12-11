@@ -1,0 +1,177 @@
+# ===== OPERATING SYSTEM FILES =====
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== EDITOR FILES =====
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== DEVELOPMENT FILES =====
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp.*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===== BUILD & DIST FILES =====
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# ===== LOGS =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===== ENVIRONMENT FILES =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# ===== BACKUP FILES =====
+*.bak
+*.backup
+*.old
+*-old.*
+*_backup.*
+
+# ===== COMPRESSED FILES =====
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ===== MEDIA FILES (if not needed) =====
+# Uncomment if you don't want to track large media files
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.flv
+# *.webm
+# *.mp3
+# *.wav
+# *.flac
+# *.aac
+
+# ===== DOCUMENTATION =====
+# Uncomment if you don't want to track documentation builds
+# docs/_build/
+# docs/.doctrees/
+
+# ===== TESTING =====
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.pytest_cache/
+.cache
+
+# ===== SECURITY =====
+# Never commit sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+config/secrets.json
+secrets.txt
+
+# ===== PROJECT SPECIFIC =====
+# Add any project-specific files to ignore
+# examples:
+# config/local.json
+# uploads/
+# user-data/
