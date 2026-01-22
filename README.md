@@ -86,6 +86,10 @@ portfolio/
 git clone https://github.com/zaenalwahyudin/portfolio.git
 cd portfolio
 ```
+```bash
+git add .
+git commit -m "Deskripsi perubahan"
+git push origin main
 
 ### 2. **Open in Browser**
 ```bash
@@ -213,6 +217,274 @@ Customize colors and fonts in `css/style.css`:
 1. Import your GitHub repository
 2. Configure project settings
 3. Deploy with zero configuration
+
+---
+
+## 📤 Panduan Update ke GitHub
+
+### **Setup Awal (Hanya Sekali)**
+
+#### 1. **Install Git**
+```bash
+# Download dan install Git dari:
+# https://git-scm.com/downloads
+
+# Verifikasi instalasi
+git --version
+```
+
+#### 2. **Konfigurasi Git**
+```bash
+# Set username dan email
+git config --global user.name "Nama Anda"
+git config --global user.email "email@example.com"
+
+# Verifikasi konfigurasi
+git config --list
+```
+
+#### 3. **Inisialisasi Repository (Jika Belum Ada)**
+```bash
+# Masuk ke folder portfolio
+cd c:\portfolio
+
+# Inisialisasi git
+git init
+
+# Tambahkan remote repository
+git remote add origin https://github.com/username/portfolio.git
+```
+
+---
+
+### **Update Rutin ke GitHub**
+
+#### **Metode 1: Update Lengkap (Recommended)**
+```bash
+# 1. Cek status perubahan
+git status
+
+# 2. Tambahkan semua perubahan
+git add .
+
+# 3. Commit dengan pesan
+git commit -m "Update portfolio - tambah project baru"
+
+# 4. Push ke GitHub
+git push origin main
+```
+
+#### **Metode 2: Update File Spesifik**
+```bash
+# Tambahkan file tertentu saja
+git add index.html
+git add css/style.css
+git add js/main.js
+
+# Commit dan push
+git commit -m "Update halaman utama dan styling"
+git push origin main
+```
+
+#### **Metode 3: Update dengan Branch (Advanced)**
+```bash
+# Buat branch baru untuk fitur
+git checkout -b feature/new-design
+
+# Lakukan perubahan, lalu commit
+git add .
+git commit -m "Redesign hero section"
+
+# Push branch baru
+git push origin feature/new-design
+
+# Merge ke main setelah review
+git checkout main
+git merge feature/new-design
+git push origin main
+```
+
+---
+
+### **Pesan Commit yang Baik**
+
+```bash
+# ✅ BAIK - Jelas dan deskriptif
+git commit -m "Tambah section testimonial di homepage"
+git commit -m "Fix responsive bug pada mobile navigation"
+git commit -m "Update foto profil dan CV terbaru"
+git commit -m "Tambah 3 project baru: E-commerce, Blog, Dashboard"
+
+# ❌ BURUK - Tidak jelas
+git commit -m "update"
+git commit -m "fix bug"
+git commit -m "changes"
+```
+
+---
+
+### **Troubleshooting**
+
+#### **Problem: Push Ditolak**
+```bash
+# Solusi: Pull dulu, lalu push
+git pull origin main --rebase
+git push origin main
+```
+
+#### **Problem: Conflict saat Merge**
+```bash
+# 1. Lihat file yang conflict
+git status
+
+# 2. Edit file, hapus marker conflict (<<<<, ====, >>>>)
+# 3. Tambahkan file yang sudah diperbaiki
+git add .
+
+# 4. Lanjutkan merge
+git commit -m "Resolve merge conflict"
+git push origin main
+```
+
+#### **Problem: Lupa Password/Token**
+```bash
+# Gunakan Personal Access Token (PAT)
+# 1. Buat token di: GitHub Settings > Developer settings > Personal access tokens
+# 2. Gunakan token sebagai password saat push
+
+# Atau simpan credential
+git config --global credential.helper store
+```
+
+#### **Problem: File Terlalu Besar**
+```bash
+# Tambahkan ke .gitignore
+echo "node_modules/" >> .gitignore
+echo "*.psd" >> .gitignore
+echo "*.zip" >> .gitignore
+
+git add .gitignore
+git commit -m "Update gitignore"
+```
+
+---
+
+### **Workflow Harian**
+
+```bash
+# Pagi: Mulai kerja
+git pull origin main          # Ambil update terbaru
+
+# Siang: Setelah selesai coding
+git add .
+git commit -m "Deskripsi perubahan"
+
+# Sore: Sebelum selesai kerja
+git push origin main          # Upload ke GitHub
+```
+
+---
+
+### **Tips & Best Practices**
+
+✅ **DO:**
+- Commit sesering mungkin dengan pesan yang jelas
+- Pull sebelum mulai coding
+- Push setelah selesai sesi coding
+- Gunakan branch untuk fitur besar
+- Review perubahan sebelum commit (`git diff`)
+
+❌ **DON'T:**
+- Commit file yang tidak perlu (node_modules, .env)
+- Push langsung ke main tanpa testing
+- Gunakan pesan commit yang tidak jelas
+- Lupa pull sebelum push
+- Commit credential atau API keys
+
+---
+
+### **File .gitignore (Recommended)**
+
+Buat file `.gitignore` di root folder:
+```
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Backup
+*.backup
+*.old
+*-old.*
+
+# Large files
+*.psd
+*.ai
+*.zip
+*.rar
+```
+
+---
+
+### **GitHub Pages Auto-Deploy**
+
+Setelah push ke GitHub, website otomatis update:
+
+1. **Enable GitHub Pages:**
+   - Buka repository di GitHub
+   - Settings > Pages
+   - Source: Deploy from branch
+   - Branch: main / root
+   - Save
+
+2. **Akses Website:**
+   - URL: `https://username.github.io/portfolio/`
+   - Update otomatis setiap kali push
+
+3. **Custom Domain (Optional):**
+   ```bash
+   # Tambahkan file CNAME
+   echo "yourdomain.com" > CNAME
+   git add CNAME
+   git commit -m "Add custom domain"
+   git push origin main
+   ```
+
+---
+
+### **Cheat Sheet Perintah Git**
+
+| Perintah | Fungsi |
+|----------|--------|
+| `git status` | Cek status perubahan |
+| `git add .` | Tambahkan semua perubahan |
+| `git add <file>` | Tambahkan file tertentu |
+| `git commit -m "pesan"` | Commit dengan pesan |
+| `git push origin main` | Upload ke GitHub |
+| `git pull origin main` | Download dari GitHub |
+| `git log` | Lihat history commit |
+| `git diff` | Lihat perubahan detail |
+| `git branch` | Lihat daftar branch |
+| `git checkout -b <name>` | Buat branch baru |
+| `git reset --hard HEAD` | Batalkan semua perubahan |
+| `git clone <url>` | Clone repository |
 
 ---
 

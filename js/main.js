@@ -42,7 +42,7 @@ const projectsData = [
         id: 3,
         title: "Portfolio Website",
         description: "A modern, responsive portfolio website showcasing my skills and projects with smooth animations and modern design.",
-        image: "images/profil1.jpg",
+        image: "images/wahyu.jpg",
         category: "web",
         technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
         github: "#",
@@ -580,38 +580,26 @@ function initTypingEffect() {
     const subtitle = document.querySelector('.hero-subtitle');
     if (!subtitle) return;
     
-    const text = 'Web Developer & UI Designer';
-    const words = text.split(' ');
-    let wordIndex = 0;
+    const text = 'Programmer • UI/UX Designer • Web Developer';
     let charIndex = 0;
-    let isDeleting = false;
+    let isComplete = false;
+    
+    // Clear initial text
+    subtitle.textContent = '';
     
     function typeWriter() {
-        const currentWord = words[wordIndex];
-        
-        if (isDeleting) {
-            subtitle.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            subtitle.textContent = currentWord.substring(0, charIndex + 1);
+        if (charIndex < text.length && !isComplete) {
+            subtitle.textContent += text.charAt(charIndex);
             charIndex++;
+            // Smooth typing speed - 80ms per character
+            setTimeout(typeWriter, 80);
+        } else {
+            isComplete = true;
         }
-        
-        let typeSpeed = isDeleting ? 50 : 100;
-        
-        if (!isDeleting && charIndex === currentWord.length) {
-            typeSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-        }
-        
-        setTimeout(typeWriter, typeSpeed);
     }
     
-    // Start typing effect after a delay
-    setTimeout(typeWriter, 1000);
+    // Start typing effect after a short delay
+    setTimeout(typeWriter, 500);
 }
 
 // ===== MOUSE PARALLAX =====
