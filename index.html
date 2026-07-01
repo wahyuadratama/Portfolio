@@ -1,442 +1,841 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Zaenal Wahyudin - Web Developer & UI Designer specializing in modern web applications and user interface design">
-    <meta name="keywords" content="web developer, UI designer, portfolio, JavaScript, HTML, CSS, React, frontend developer, Indonesia">
-    <meta name="author" content="Zaenal Wahyudin">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Zaenal Wahyudin - Web Developer & UI Designer specializing in modern web applications and user interface design"
+    />
+    <meta
+      name="keywords"
+      content="web developer, UI designer, portfolio, JavaScript, HTML, CSS, React, frontend developer, Indonesia"
+    />
+    <meta name="author" content="Zaenal Wahyudin" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
     
+    <!-- Additional SEO Meta Tags -->
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zaenal Wahyudin",
+      "url": "https://zaenalwahyudin.github.io/portfolio/",
+      "image": "https://zaenalwahyudin.github.io/portfolio/images/wahyu.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/zaenal-wahyudin-39b3a313/",
+        "https://github.com/wahyuadratama",
+        "https://www.instagram.com/alquee_rlsm/"
+      ],
+      "jobTitle": "Web Developer & UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universitas Alma Ata Yogyakarta"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Yogyakarta",
+        "addressCountry": "Indonesia"
+      },
+      "email": "zaenalwahyudin270@gmail.com",
+      "telephone": "+6283895937947"
+    }
+    </script>
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zaenalwahyudin.github.io/portfolio/">
-    <meta property="og:title" content="Zaenal Wahyudin | Web Developer & UI Designer">
-    <meta property="og:description" content="Portfolio showcasing modern web development projects and UI design work by Zaenal Wahyudin">
-    <meta property="og:image" content="https://zaenalwahyudin.github.io/portfolio/images/wahyu.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Zaenal Wahyudin Portfolio">
-    <meta property="og:locale" content="en_US">
-    
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://zaenalwahyudin.github.io/portfolio/"
+    />
+    <meta
+      property="og:title"
+      content="Zaenal Wahyudin | Web Developer & UI Designer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing modern web development projects and UI design work by Zaenal Wahyudin"
+    />
+    <meta
+      property="og:image"
+      content="https://zaenalwahyudin.github.io/portfolio/images/wahyu.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Zaenal Wahyudin Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://zaenalwahyudin.github.io/portfolio/">
-    <meta property="twitter:title" content="Zaenal Wahyudin | Web Developer & UI Designer">
-    <meta property="twitter:description" content="Portfolio showcasing modern web development projects and UI design work">
-    <meta property="twitter:image" content="https://zaenalwahyudin.github.io/portfolio/images/wahyu.jpg">
-    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://zaenalwahyudin.github.io/portfolio/"
+    />
+    <meta
+      property="twitter:title"
+      content="Zaenal Wahyudin | Web Developer & UI Designer"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio showcasing modern web development projects and UI design work"
+    />
+    <meta
+      property="twitter:image"
+      content="https://zaenalwahyudin.github.io/portfolio/images/wahyu.jpg"
+    />
+
     <!-- PWA -->
-    <meta name="theme-color" content="#0046FF">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="ZW Portfolio">
-    <link rel="manifest" href="manifest.json">
-    
+    <meta name="theme-color" content="#0046FF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="ZW Portfolio" />
+    <link rel="manifest" href="manifest.json" />
+
     <title>Zaenal Wahyudin | Web Developer & UI Designer Portfolio</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon2.png">
-    <link rel="apple-touch-icon" href="images/favicon2.png">
-    
+    <link rel="icon" type="image/png" href="images/favicon2.png" />
+    <link rel="apple-touch-icon" href="images/favicon2.png" />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://api.github.com" />
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
     
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+    <link rel="preload" href="images/wahyu.jpg" as="image" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/wahyu.jpg" alt="Profile" class="logo-img">
-                <span class="logo-text">Zaenal Wahyudin</span>
-            </div>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#resume" class="nav-link">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="images/wahyu.jpg" alt="Profile" class="logo-img" />
+          <span class="logo-text">Zaenal Wahyudin</span>
         </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg-gradient"></div>
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-        <div class="hero-glow hero-glow-3"></div>
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-profile-image">
-                    <img src="images/wahyu.jpg" alt="Zaenal Wahyudin" class="hero-profile-img">
-                </div>
-                
-                <h1 class="hero-title-main">PORTFOLIO</h1>
-                
-                <div class="hero-badges">
-                    <span class="badge"><i class="fab fa-html5"></i> HTML</span>
-                    <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                    <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="badge"><i class="fab fa-react"></i> React</span>
-                    <span class="badge"><i class="fab fa-python"></i> Python</span>
-                    <span class="badge"><i class="fab fa-figma"></i> Figma</span>
-                </div>
-                
-                <p class="hero-subtitle">Programmer • UI/UX Designer • Web Developer</p>
-                
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
+      <div class="hero-bg-gradient"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-glow hero-glow-3"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-profile-image">
+            <img
+              src="images/wahyu.jpg"
+              alt="Zaenal Wahyudin"
+              class="hero-profile-img"
+            />
+          </div>
+
+          <h1 class="hero-title-main">PORTFOLIO</h1>
+          <!-- Achievement Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">2+</span>
+              <span class="highlight-label">Years Experience</span>
             </div>
+            <div class="highlight-item">
+              <span class="highlight-number">10+</span>
+              <span class="highlight-label">Projects Delivered</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number">3+</span>
+              <span class="highlight-label">Certifications</span>
+            </div>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+            <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="badge"><i class="fab fa-react"></i> React</span>
+            <span class="badge"><i class="fab fa-python"></i> Python</span>
+            <span class="badge"><i class="fab fa-figma"></i> Figma</span>
+          </div>
+
+          <p class="hero-subtitle" id="hero-subtitle">
+            Programmer • UI/UX Designer • Web Developer
+          </p>
+          <p class="hero-tagline">
+            Transforming ideas into elegant digital experiences
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary">
+              <i class="fas fa-briefcase"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i>
+              Let's Talk
+            </a>
+            <a href="#" class="btn btn-secondary" id="download-cv-btn">
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+          </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        An undergraduate student of Alma Ata University Yogyakarta majoring in Informatics. 
-                        A detail-oriented programmer with experience in developing web and mobile applications.
-                    </p>
-                    <p class="about-description">
-                        I possess strong skills in programming, debugging, and managing projects using Agile methodologies. 
-                        I am passionate about learning new technologies and continuously innovating to deliver efficient digital solutions.
-                    </p>
-                    
-                    <div class="skills slide-in-left">
-                        <h3>Technical Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-react"></i>
-                                <span>React</span>
-                            </div>
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-item fade-in">
-                                <i class="fab fa-figma"></i>
-                                <span>Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-stats slide-in-right">
-                    <div class="stat-item fade-in pulse">
-                        <h3 class="stat-number">2</h3>
-                        <p class="stat-label">Years Experience</p>
-                    </div>
-                    <div class="stat-item fade-in pulse">
-                        <h3 class="stat-number">10</h3>
-                        <p class="stat-label">Projects Completed</p>
-                    </div>
-                    <div class="stat-item fade-in pulse">
-                        <h3 class="stat-number">3</h3>
-                        <p class="stat-label">Certificates</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
         </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              <strong>"Code is poetry written in logic."</strong> That's what
+              drives me every day.
+            </p>
+            <p class="about-description">
+              Saya adalah mahasiswa Teknik Informatika di Universitas Alma Ata
+              Yogyakarta yang memulai perjalanan coding dari rasa penasaran
+              sederhana:
+              <em>"Bagaimana website ini bisa bekerja?"</em> Pertanyaan itu
+              membawa saya dari seseorang yang hanya bisa mengunakan komputer,
+              menjadi seseorang yang bisa
+              <strong>menciptakan pengalaman digital</strong> untuk orang lain.
+            </p>
+            <p class="about-description">
+              Dalam 2+ tahun terakhir, saya telah mengembangkan
+              <strong>10+ project</strong> yang berfokus pada
+              <em>user experience</em> dan <em>clean code</em>. Setiap baris
+              kode yang saya tulis bukan hanya tentang membuat sesuatu
+              "bekerja", tapi tentang membuat sesuatu yang
+              <strong>intuitif, efisien, dan memorable</strong>.
+            </p>
+            <p class="about-description">
+              Saya percaya bahwa teknologi terbaik adalah yang
+              <em>invisible</em> - yang bekerja begitu mulus sehingga pengguna
+              bahkan tidak menyadarinya. Itulah yang saya coba wujudkan dalam
+              setiap project:
+              <strong>solusi yang sederhana untuk masalah yang kompleks</strong
+              >.
+            </p>
+
+            <div class="skills slide-in-left">
+              <h3>Technical Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-item fade-in">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-figma"></i>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-php"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="skill-item fade-in">
+                  <i class="fab fa-laravel"></i>
+                  <span>Laravel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats slide-in-right">
+            <div class="stat-item fade-in pulse">
+              <h3 class="stat-number">2</h3>
+              <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-item fade-in pulse">
+              <h3 class="stat-number">10</h3>
+              <p class="stat-label">Projects Completed</p>
+            </div>
+            <div class="stat-item fade-in pulse">
+              <h3 class="stat-number">3</h3>
+              <p class="stat-label">Certificates</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Portfolio</h2>
-                <p class="section-subtitle">Recent projects I've worked on</p>
-            </div>
-            
-            <div class="portfolio-filters fade-in">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="ui">UI Design</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-            </div>
-            
-            <div class="portfolio-grid" id="portfolio-grid">
-                <!-- Projects will be loaded dynamically -->
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Portfolio</h2>
+          <p class="section-subtitle">Recent projects I've worked on</p>
         </div>
+
+        <div class="portfolio-filters fade-in">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Projects will be loaded dynamically -->
+        </div>
+      </div>
     </section>
 
     <!-- Resume Section -->
     <section id="resume" class="resume">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Resume</h2>
-                <p class="section-subtitle">Education & Experience</p>
-            </div>
-            
-            <div class="resume-content">
-                <div class="resume-column">
-                    <h3 class="resume-column-title">
-                        <i class="fas fa-graduation-cap"></i>
-                        Education
-                    </h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">2024 - Present</div>
-                            <div class="timeline-content">
-                                <h4>Informatics Engineering</h4>
-                                <p>Alma Ata University, Yogyakarta</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2016 - 2022</div>
-                            <div class="timeline-content">
-                                <h4>Islamic Boarding School</h4>
-                                <p>Darul Mukhlisin, Bandung Barat</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2010 - 2016</div>
-                            <div class="timeline-content">
-                                <h4>Elementary School</h4>
-                                <p>Salam Praja, Bandung Barat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="resume-column">
-                    <h3 class="resume-column-title">
-                        <i class="fas fa-briefcase"></i>
-                        Experience
-                    </h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">2024</div>
-                            <div class="timeline-content">
-                                <h4>UI Designer</h4>
-                                <p>Designed intuitive web interfaces using Figma and Adobe XD</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2023</div>
-                            <div class="timeline-content">
-                                <h4>Web Developer Intern</h4>
-                                <p>Freelance - Developed portfolio website using HTML, CSS, and JavaScript</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Resume</h2>
+          <p class="section-subtitle">Education & Experience</p>
         </div>
+
+        <div class="resume-content">
+          <div class="resume-column">
+            <h3 class="resume-column-title">
+              <i class="fas fa-graduation-cap"></i>
+              Education
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                  <h4>Informatics Engineering</h4>
+                  <p>Alma Ata University, Yogyakarta</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2016 - 2022</div>
+                <div class="timeline-content">
+                  <h4>Islamic Boarding School</h4>
+                  <p>Darul Mukhlisin, Bandung Barat</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2010 - 2016</div>
+                <div class="timeline-content">
+                  <h4>Elementary School</h4>
+                  <p>Salam Praja, Bandung Barat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-column">
+            <h3 class="resume-column-title">
+              <i class="fas fa-briefcase"></i>
+              Experience
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                  <h4>UI Designer</h4>
+                  <p>
+                    Designed intuitive web interfaces using Figma and Adobe XD
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                  <h4>Web Developer Intern</h4>
+                  <p>
+                    Freelance - Developed portfolio website using HTML, CSS, and
+                    JavaScript
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-medal"></i>
-                    Certificates & Achievements
-                </h2>
-                <p class="section-subtitle">My learning journey and accomplishments</p>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-medal"></i>
+            Certificates & Achievements
+          </h2>
+          <p class="section-subtitle">
+            My learning journey and accomplishments
+          </p>
+        </div>
+
+        <div class="certificates-grid" id="certificates-grid">
+          <!-- Certificates will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github-stats" class="github-stats">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fab fa-github"></i>
+            GitHub Statistics
+          </h2>
+          <p class="section-subtitle">My coding activity and contributions</p>
+        </div>
+
+        <div class="github-stats-grid">
+          <!-- Stats Cards -->
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-code-branch"></i>
             </div>
-            
-            <div class="certificates-grid" id="certificates-grid">
-                <!-- Certificates will be loaded dynamically -->
+            <div class="stat-info">
+              <h3 class="stat-value" id="github-repos">...</h3>
+              <p class="stat-label">Public Repositories</p>
             </div>
-            
-            <div class="add-certificate fade-in">
-                <button class="btn btn-outline pulse" id="add-cert-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Certificate
-                </button>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-star"></i>
             </div>
+            <div class="stat-info">
+              <h3 class="stat-value" id="github-stars">...</h3>
+              <p class="stat-label">Total Stars</p>
+            </div>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-value" id="github-followers">...</h3>
+              <p class="stat-label">Followers</p>
+            </div>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-value" id="github-contributions">...</h3>
+              <p class="stat-label">Contributions (2025)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Profile Card -->
+        <div class="github-profile-card fade-in">
+          <div class="profile-header">
+            <img src="images/wahyu.jpg" alt="GitHub Profile" class="github-avatar" id="github-avatar">
+            <div class="profile-info">
+              <h3 class="profile-name" id="github-name">Loading...</h3>
+              <p class="profile-username" id="github-username">@wahyuadratama</p>
+              <p class="profile-bio" id="github-bio">Loading bio...</p>
+            </div>
+          </div>
+          <div class="profile-stats">
+            <div class="profile-stat-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="github-location">Yogyakarta, Indonesia</span>
+            </div>
+            <div class="profile-stat-item">
+              <i class="fas fa-link"></i>
+              <a href="https://github.com/wahyuadratama" target="_blank" rel="noopener">github.com/wahyuadratama</a>
+            </div>
+          </div>
+          <a href="https://github.com/wahyuadratama" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-github"></i>
+            View GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-quote-left"></i>
+            What People Say
+          </h2>
+          <p class="section-subtitle">Feedback from colleagues and mentors</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">
+                "Zaenal memiliki dedikasi luar biasa dalam belajar teknologi baru. 
+                Kemampuannya dalam problem-solving dan attention to detail sangat 
+                mengesankan untuk seorang developer muda."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-imgplaceholder">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Muhammad Rizki</h4>
+                <p class="author-role">Senior Developer - Tech Company</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">
+                "Bekerja dengan Zaenal sangat menyenangkan. Dia selalu memberikan 
+                solusi kreatif dan tidak pernah berhenti belajar. UI design yang 
+                dibuatnya sangat clean dan user-friendly."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Rina Kusuma</h4>
+                <p class="author-role">Frontend Developer - Tech Startup</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">
+                "Zaenal adalah team player yang baik. Kodenya rapi, terdokumentasi 
+                dengan baik, dan mudah dipahami. Senang bisa berkolaborasi dengannya 
+                dalam project hackathon."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Budi Santoso</h4>
+                <p class="author-role">Full Stack Developer - GDSC Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-blog"></i>
+            Blog & Articles
+          </h2>
+          <p class="section-subtitle">Sharing knowledge and insights about technology</p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Article 1 -->
+          <article class="blog-card fade-in">
+            <div class="blog-image">
+              <img src="images/blog-1.jpg" alt="Blog Article" loading="lazy" onerror="this.src='images/wahyu.jpg'">
+              <div class="blog-category">Tutorial</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date"><i class="fas fa-calendar"></i> 15 Des 2024</span>
+                <span class="blog-read-time"><i class="fas fa-clock"></i> 5 min read</span>
+              </div>
+              <h3 class="blog-title">Membangun Portfolio Website Modern dengan HTML, CSS, dan JavaScript</h3>
+              <p class="blog-excerpt">
+                Panduan lengkap membuat portfolio website yang responsive dan modern mengunakan teknologi dasar web development.
+                Dari setup project hingga deployment ke GitHub Pages.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">HTML</span>
+                <span class="blog-tag">CSS</span>
+                <span class="blog-tag">JavaScript</span>
+              </div>
+              <a href="#" class="blog-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card fade-in">
+            <div class="blog-image">
+              <img src="images/blog-2.jpg" alt="Blog Article" loading="lazy" onerror="this.src='images/wahyu.jpg'">
+              <div class="blog-category">Tips & Tricks</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date"><i class="fas fa-calendar"></i> 10 Des 2024</span>
+                <span class="blog-read-time"><i class="fas fa-clock"></i> 3 min read</span>
+              </div>
+              <h3 class="blog-title">10 Tips Meningkatkan Performance Website Anda</h3>
+              <p class="blog-excerpt">
+                Tips praktis untuk mengoptimalkan performa website mulai dari image optimization, lazy loading,
+                hingga minifikasi CSS dan JavaScript untuk loading time yang lebih cepat.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">Performance</span>
+                <span class="blog-tag">Optimization</span>
+                <span class="blog-tag">Web Dev</span>
+              </div>
+              <a href="#" class="blog-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card fade-in">
+            <div class="blog-image">
+              <img src="images/blog-3.jpg" alt="Blog Article" loading="lazy" onerror="this.src='images/wahyu.jpg'">
+              <div class="blog-category">Best Practice</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date"><i class="fas fa-calendar"></i> 5 Des 2024</span>
+                <span class="blog-read-time"><i class="fas fa-clock"></i> 7 min read</span>
+              </div>
+              <h3 class="blog-title">Clean Code Principles untuk JavaScript Developer</h3>
+              <p class="blog-excerpt">
+                Pelajari prinsip-prinsip clean code yang akan membuat kode JavaScript Anda lebih readable,
+                maintainable, dan mudah di-debug oleh tim development.
+              </p>
+              <div class="blog-tags">
+                <span class="blog-tag">Clean Code</span>
+                <span class="blog-tag">JavaScript</span>
+                <span class="blog-tag">Best Practice</span>
+              </div>
+              <a href="#" class="blog-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together on your next project</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info slide-in-left">
-                    <div class="contact-item fade-in">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>zaenalwahyudin270@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item fade-in">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>(+62) 838-9593-7947</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item fade-in">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Yogyakarta, Indonesia</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/alquee_rlsm/" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/wahyuadratama" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/zaenal-wahyudin-39b3a3313/" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form slide-in-right glow" action="https://formspree.io/f/xnngonvb" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's work together on your next project
+          </p>
         </div>
+
+        <div class="contact-content">
+          <div class="contact-info slide-in-left">
+            <div class="contact-item fade-in">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>zaenalwahyudin270@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>(+62) 838-9593-7947</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Yogyakarta, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/alquee_rlsm/"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/wahyuadratama" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/zaenal-wahyudin-39b3a3313/"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form slide-in-right glow"
+            action="https://formspree.io/f/xnngonvb"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Zaenal Wahyudin. All rights reserved.</p>
-                <p>Made with <i class="fas fa-coffee"></i> Kang Tidur</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Zaenal Wahyudin. All rights reserved.</p>
+          <p>Made with <i class="fas fa-coffee"></i> Kang Tidur</p>
         </div>
+      </div>
     </footer>
-
-    <!-- Certificate Modal -->
-    <div class="modal" id="cert-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Add New Certificate</h3>
-                <button class="modal-close" id="modal-close">&times;</button>
-            </div>
-            
-            <form class="cert-form" id="cert-form">
-                <div class="form-group">
-                    <input type="text" id="cert-title" placeholder="Certificate Title" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" id="cert-issuer" placeholder="Issuer (e.g., Dicoding, Coursera)" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" id="cert-year" placeholder="Year (e.g., 2024)" required>
-                </div>
-                
-                <div class="form-group">
-                    <input type="url" id="cert-image" placeholder="Image URL" required>
-                </div>
-                
-                <div class="form-buttons">
-                    <button type="submit" class="btn btn-primary">Save Certificate</button>
-                    <button type="button" class="btn btn-secondary" id="cancel-cert">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <!-- Loading Spinner -->
     <div class="loading" id="loading">
-        <div class="spinner"></div>
+      <div class="spinner"></div>
     </div>
 
     <!-- Image Preview Modal -->
     <div class="image-modal" id="image-modal">
-        <span class="image-modal-close" id="image-modal-close">&times;</span>
-        <div class="image-modal-content">
-            <img id="modal-image" src="" alt="Certificate Preview">
-            <div class="image-modal-title" id="modal-title"></div>
-        </div>
+      <span class="image-modal-close" id="image-modal-close">&times;</span>
+      <div class="image-modal-content">
+        <img id="modal-image" src="" alt="Certificate Preview" />
+        <div class="image-modal-title" id="modal-title"></div>
+      </div>
     </div>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

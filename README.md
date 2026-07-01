@@ -13,18 +13,21 @@ A modern, responsive, and interactive portfolio website showcasing my skills, pr
 ## ✨ Features
 
 ### 🎨 **Modern Design**
+
 - Clean and professional interface
 - Smooth animations and transitions
 - Gradient backgrounds and modern typography
 - Responsive design for all devices
 
 ### 📱 **Fully Responsive**
+
 - Mobile-first approach
 - Optimized for tablets and desktops
 - Touch-friendly navigation
 - Adaptive layouts
 
 ### 🔧 **Interactive Elements**
+
 - Dynamic project filtering
 - Certificate management system
 - Contact form with validation
@@ -32,12 +35,14 @@ A modern, responsive, and interactive portfolio website showcasing my skills, pr
 - Loading animations
 
 ### ⚡ **Performance Optimized**
+
 - Lazy loading for images
 - Debounced scroll events
 - Minimal JavaScript bundle
 - Optimized CSS animations
 
 ### 🎯 **Accessibility Features**
+
 - Keyboard navigation support
 - Screen reader friendly
 - High contrast ratios
@@ -47,13 +52,13 @@ A modern, responsive, and interactive portfolio website showcasing my skills, pr
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose | Version |
-|------------|---------|---------|
-| **HTML5** | Structure & Semantics | Latest |
-| **CSS3** | Styling & Animations | Latest |
-| **JavaScript (ES6+)** | Interactivity & Logic | ES2020+ |
-| **Font Awesome** | Icons | 6.5.0 |
-| **Google Fonts** | Typography | Inter Font |
+| Technology            | Purpose               | Version    |
+| --------------------- | --------------------- | ---------- |
+| **HTML5**             | Structure & Semantics | Latest     |
+| **CSS3**              | Styling & Animations  | Latest     |
+| **JavaScript (ES6+)** | Interactivity & Logic | ES2020+    |
+| **Font Awesome**      | Icons                 | 6.5.0      |
+| **Google Fonts**      | Typography            | Inter Font |
 
 ---
 
@@ -82,11 +87,13 @@ portfolio/
 ## 🚀 Quick Start
 
 ### 1. **Clone Repository**
+
 ```bash
 git clone https://github.com/zaenalwahyudin/portfolio.git
 cd portfolio
 ```
-```bash
+
+````bash
 git add .
 git commit -m "Deskripsi perubahan"
 git push origin main
@@ -97,9 +104,10 @@ git push origin main
 # Or use a local server for better experience
 python -m http.server 8000
 # Then visit: http://localhost:8000
-```
+````
 
 ### 3. **Customize Content**
+
 - Edit personal information in `index.html`
 - Update project data in `js/main.js`
 - Replace images in `images/` folder
@@ -110,51 +118,59 @@ python -m http.server 8000
 ## 🎨 Customization Guide
 
 ### **Personal Information**
+
 Update the following sections in `index.html`:
+
 - Hero section (name, title, description)
 - About section (bio, skills, stats)
 - Contact information
 - Social media links
 
 ### **Projects**
+
 Modify the `projectsData` array in `js/main.js`:
+
 ```javascript
 const projectsData = [
-    {
-        id: 1,
-        title: "Your Project Title",
-        description: "Project description...",
-        image: "images/your-image.png",
-        category: "web", // web, ui, mobile
-        technologies: ["HTML", "CSS", "JS"],
-        github: "https://github.com/...",
-        demo: "https://your-demo.com"
-    }
+  {
+    id: 1,
+    title: "Your Project Title",
+    description: "Project description...",
+    image: "images/your-image.png",
+    category: "web", // web, ui, mobile
+    technologies: ["HTML", "CSS", "JS"],
+    github: "https://github.com/...",
+    demo: "https://your-demo.com",
+  },
 ];
 ```
 
 ### **Certificates**
+
 Update the `certificatesData` array in `js/main.js`:
+
 ```javascript
 const certificatesData = [
-    {
-        id: 1,
-        title: "Certificate Title",
-        issuer: "Issuing Organization",
-        year: "2024",
-        image: "images/certificate.png"
-    }
+  {
+    id: 1,
+    title: "Certificate Title",
+    issuer: "Issuing Organization",
+    year: "2024",
+    image: "images/certificate.png",
+  },
 ];
 ```
 
 ### **Styling**
+
 Customize colors and fonts in `css/style.css`:
+
 ```css
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --text-color: #333;
-    --bg-color: #ffffff;
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --text-color: #333;
+  --bg-color: #ffffff;
 }
 ```
 
@@ -162,35 +178,39 @@ Customize colors and fonts in `css/style.css`:
 
 ## 📱 Responsive Breakpoints
 
-| Device | Breakpoint | Layout |
-|--------|------------|--------|
-| **Mobile** | < 480px | Single column, stacked elements |
-| **Tablet** | 481px - 768px | Two columns, adjusted spacing |
-| **Desktop** | > 768px | Full grid layout, all features |
+| Device      | Breakpoint    | Layout                          |
+| ----------- | ------------- | ------------------------------- |
+| **Mobile**  | < 480px       | Single column, stacked elements |
+| **Tablet**  | 481px - 768px | Two columns, adjusted spacing   |
+| **Desktop** | > 768px       | Full grid layout, all features  |
 
 ---
 
 ## 🔧 Features in Detail
 
 ### **Navigation System**
+
 - Sticky navigation with scroll effects
 - Mobile hamburger menu
 - Smooth scrolling to sections
 - Active link highlighting
 
 ### **Portfolio Filtering**
+
 - Filter projects by category
 - Smooth animations during filtering
 - Responsive grid layout
 - Lazy loading for images
 
 ### **Certificate Management**
+
 - Add new certificates via modal
 - Local storage persistence
 - Delete functionality
 - Form validation
 
 ### **Contact Form**
+
 - Form validation
 - Integration with Formspree
 - Success/error notifications
@@ -201,6 +221,7 @@ Customize colors and fonts in `css/style.css`:
 ## 🚀 Deployment
 
 ### **GitHub Pages**
+
 1. Push code to GitHub repository
 2. Go to repository Settings
 3. Navigate to Pages section
@@ -208,12 +229,14 @@ Customize colors and fonts in `css/style.css`:
 5. Your site will be available at: `https://username.github.io/portfolio/`
 
 ### **Netlify**
+
 1. Connect your GitHub repository
 2. Set build command: (none needed)
 3. Set publish directory: `/`
 4. Deploy automatically on push
 
 ### **Vercel**
+
 1. Import your GitHub repository
 2. Configure project settings
 3. Deploy with zero configuration
@@ -225,6 +248,7 @@ Customize colors and fonts in `css/style.css`:
 ### **Setup Awal (Hanya Sekali)**
 
 #### 1. **Install Git**
+
 ```bash
 # Download dan install Git dari:
 # https://git-scm.com/downloads
@@ -234,6 +258,7 @@ git --version
 ```
 
 #### 2. **Konfigurasi Git**
+
 ```bash
 # Set username dan email
 git config --global user.name "Nama Anda"
@@ -244,6 +269,7 @@ git config --list
 ```
 
 #### 3. **Inisialisasi Repository (Jika Belum Ada)**
+
 ```bash
 # Masuk ke folder portfolio
 cd c:\portfolio
@@ -260,6 +286,7 @@ git remote add origin https://github.com/username/portfolio.git
 ### **Update Rutin ke GitHub**
 
 #### **Metode 1: Update Lengkap (Recommended)**
+
 ```bash
 # 1. Cek status perubahan
 git status
@@ -275,6 +302,7 @@ git push origin main
 ```
 
 #### **Metode 2: Update File Spesifik**
+
 ```bash
 # Tambahkan file tertentu saja
 git add index.html
@@ -287,6 +315,7 @@ git push origin main
 ```
 
 #### **Metode 3: Update dengan Branch (Advanced)**
+
 ```bash
 # Buat branch baru untuk fitur
 git checkout -b feature/new-design
@@ -326,6 +355,7 @@ git commit -m "changes"
 ### **Troubleshooting**
 
 #### **Problem: Push Ditolak**
+
 ```bash
 # Solusi: Pull dulu, lalu push
 git pull origin main --rebase
@@ -333,6 +363,7 @@ git push origin main
 ```
 
 #### **Problem: Conflict saat Merge**
+
 ```bash
 # 1. Lihat file yang conflict
 git status
@@ -347,6 +378,7 @@ git push origin main
 ```
 
 #### **Problem: Lupa Password/Token**
+
 ```bash
 # Gunakan Personal Access Token (PAT)
 # 1. Buat token di: GitHub Settings > Developer settings > Personal access tokens
@@ -357,6 +389,7 @@ git config --global credential.helper store
 ```
 
 #### **Problem: File Terlalu Besar**
+
 ```bash
 # Tambahkan ke .gitignore
 echo "node_modules/" >> .gitignore
@@ -388,6 +421,7 @@ git push origin main          # Upload ke GitHub
 ### **Tips & Best Practices**
 
 ✅ **DO:**
+
 - Commit sesering mungkin dengan pesan yang jelas
 - Pull sebelum mulai coding
 - Push setelah selesai sesi coding
@@ -395,6 +429,7 @@ git push origin main          # Upload ke GitHub
 - Review perubahan sebelum commit (`git diff`)
 
 ❌ **DON'T:**
+
 - Commit file yang tidak perlu (node_modules, .env)
 - Push langsung ke main tanpa testing
 - Gunakan pesan commit yang tidak jelas
@@ -406,6 +441,7 @@ git push origin main          # Upload ke GitHub
 ### **File .gitignore (Recommended)**
 
 Buat file `.gitignore` di root folder:
+
 ```
 # Dependencies
 node_modules/
@@ -471,20 +507,20 @@ Setelah push ke GitHub, website otomatis update:
 
 ### **Cheat Sheet Perintah Git**
 
-| Perintah | Fungsi |
-|----------|--------|
-| `git status` | Cek status perubahan |
-| `git add .` | Tambahkan semua perubahan |
-| `git add <file>` | Tambahkan file tertentu |
-| `git commit -m "pesan"` | Commit dengan pesan |
-| `git push origin main` | Upload ke GitHub |
-| `git pull origin main` | Download dari GitHub |
-| `git log` | Lihat history commit |
-| `git diff` | Lihat perubahan detail |
-| `git branch` | Lihat daftar branch |
-| `git checkout -b <name>` | Buat branch baru |
-| `git reset --hard HEAD` | Batalkan semua perubahan |
-| `git clone <url>` | Clone repository |
+| Perintah                 | Fungsi                    |
+| ------------------------ | ------------------------- |
+| `git status`             | Cek status perubahan      |
+| `git add .`              | Tambahkan semua perubahan |
+| `git add <file>`         | Tambahkan file tertentu   |
+| `git commit -m "pesan"`  | Commit dengan pesan       |
+| `git push origin main`   | Upload ke GitHub          |
+| `git pull origin main`   | Download dari GitHub      |
+| `git log`                | Lihat history commit      |
+| `git diff`               | Lihat perubahan detail    |
+| `git branch`             | Lihat daftar branch       |
+| `git checkout -b <name>` | Buat branch baru          |
+| `git reset --hard HEAD`  | Batalkan semua perubahan  |
+| `git clone <url>`        | Clone repository          |
 
 ---
 
@@ -502,17 +538,18 @@ Setelah push ke GitHub, website otomatis update:
 
 ## 🧪 Browser Support
 
-| Browser | Version | Support |
-|---------|---------|---------|
-| **Chrome** | 60+ | ✅ Full Support |
-| **Firefox** | 55+ | ✅ Full Support |
-| **Safari** | 12+ | ✅ Full Support |
-| **Edge** | 79+ | ✅ Full Support |
-| **IE** | 11 | ⚠️ Limited Support |
+| Browser     | Version | Support            |
+| ----------- | ------- | ------------------ |
+| **Chrome**  | 60+     | ✅ Full Support    |
+| **Firefox** | 55+     | ✅ Full Support    |
+| **Safari**  | 12+     | ✅ Full Support    |
+| **Edge**    | 79+     | ✅ Full Support    |
+| **IE**      | 11      | ⚠️ Limited Support |
 
 ---
 
 ## 📫 Contact
+
 💼 **Name:** WahyuAdratama  
 📧 **Email:** zaenalwahyudin270@gmail.com
 🌐 **Portfolio:** [https://wahyuadratama.github.io/Portfolio/](https://wahyuadratama.github.io/Portfolio/)  
@@ -549,6 +586,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📞 Contact & Support
 
 **Zaenal Wahyudin**
+
 - 📧 Email: zaenalwahyudin@example.com
 - 🌐 Portfolio: [zaenalwahyudin.github.io](https://zaenalwahyudin.github.io)
 - 💼 LinkedIn: [linkedin.com/in/zaenal-wahyudin](https://linkedin.com/in/zaenal-wahyudin-39b3a3313/)
@@ -569,6 +607,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📊 Changelog
 
 ### Version 2.0.0 (2025-01-XX)
+
 - ✨ Complete redesign with modern UI
 - 🚀 Improved performance and loading times
 - 📱 Enhanced mobile responsiveness
@@ -579,6 +618,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - ♿ Accessibility improvements
 
 ### Version 1.0.0 (2024-XX-XX)
+
 - 🎉 Initial release
 - 📄 Basic portfolio structure
 - 🎨 Simple CSS styling
