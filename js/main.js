@@ -76,22 +76,22 @@ const projectsData = [
 const certificatesData = [
   {
     id: 1,
-    title: "Front-End Developer Learning Path",
-    issuer: "Dicoding Indonesia",
+    title: "Use Generative AI For Software Development",
+    issuer: "IBM SkillsBuild",
     year: "2024",
     image: "images/CER 2.png",
   },
   {
     id: 2,
     title: "Hackathon 2025 Winner",
-    issuer: "Google Developer Student Club",
+    issuer: "IBM SkillsBuild",
     year: "2025",
     image: "images/CER 1.png",
   },
   {
     id: 3,
     title: "AI for Everyone",
-    issuer: "Coursera",
+    issuer: "IBM SkillsBuild",
     year: "2024",
     image: "images/CER 3.png",
   },

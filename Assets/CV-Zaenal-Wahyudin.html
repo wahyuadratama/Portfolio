@@ -1,123 +1,229 @@
-<!DOCTYPE html>
+"<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Zaenal Wahyudin</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: #f5f5f5;
-        }
-        .cv-container {
-            background: white;
-            padding: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #8a2be2;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 { color: #8a2be2; margin: 0; }
-        .contact { margin: 10px 0; color: #666; }
-        .section { margin: 30px 0; }
-        .section h2 {
-            color: #8a2be2;
-            border-bottom: 2px solid #ff4500;
-            padding-bottom: 5px;
-        }
-        .note {
-            background: #fff3cd;
-            border-left: 4px solid #fc107;
-            padding: 15px;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+  <body>
     <div class="cv-container">
-        <div class="note">
-            <strong>📝 Catan:</strong> Ini adalah template CV sementara. 
-            Silakan ganti file ini dengan CV PDF Anda yang sebenarnya dengan nama file:
-            <strong>CV-Zaenal-Wahyudin.pdf</strong>
+      <!-- Header -->
+      <header class="cv-header">
+        <div class="cv-profile">
+          <div class="cv-profile-image">
+            <img src="profile.jpg" alt="Zaenal Wahyudin" class="cv-img" />
+          </div>
+          <h1 class="cv-name">ZAENAL WAHYUDIN</h1>
+          <p class="cv-location">
+            <i class="fas fa-map-marker-alt"></i> Bandung Barat, Indonesia
+          </p>
         </div>
-        <div class="header">
-            <h1>ZAENAL WAHYUDIN</h1>
-            <div class="contact">
-                <p>📧 zaenalwahyudin270@gmail.com | 📱 (+62) 838-9593-7947</p>
-                <p>📍 Yogyakarta, Indonesia</p>
-                <p>🔗 LinkedIn: linkedin.com/in/zaenal-wahyudin | GitHub: github.com/wahyuadratama</p>
-            </div>
+        <div class="cv-contact">
+          <p class="cv-contact-item">
+            <i class="fas fa-envelope"></i> zaenalwahyudin270@gmail.com
+          </p>
+          <p class="cv-contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/zaenalwahyudin"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </p>
+          <p class="cv-contact-item">
+            <i class="fab fa-github"></i>
+            <a
+              href="https://github.com/wahyuadratama"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </p>
         </div>
+      </header>
 
-        <div class="section">
-            <h2>PROFIL PROFESIONAL</h2>
-            <p>
-                Mahasiswa Teknik Informatika Universitas Alma Ata Yogyakarta dengan passion
-                di bidang web development dan UI/UX design. Memiliki pengalaman 2+ tahun dalam 
-                mengembangkan aplikasi web modern dengan fokus pada user experience dan clean code.
+      <!-- Profile Section -->
+      <section class="cv-section">
+        <h2 class="cv-section-title"><i class="fas fa-user"></i> Profil</h2>
+        <p class="cv-profile-text">
+          Mahasiswa S1 Informatika Universitas Alma Ata Yogyakarta dengan minat
+          di bidang
+          <strong>Web Development</strong> dan
+          <strong>Teknologi Informasi</strong>. Memiliki pengalaman dalam
+          pengembangan website, pemrograman, dan bersemangat mempelajari
+          teknologi baru untuk memberikan solusi digital yang efisien.
+        </p>
+      </section>
+
+      <!-- Education Section -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-graduation-cap"></i> Pendidikan
+        </h2>
+        <div class="cv-table-container">
+          <table class="cv-table">
+            <thead>
+              <tr>
+                <th>Institusi</th>
+                <th>Program Studi</th>
+                <th>Tahun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Universitas Alma Ata Yogyakarta</td>
+                <td>S1 Informatika</td>
+                <td>2024 – Sekarang</td>
+              </tr>
+              <tr>
+                <td>Pondok Pesantren Modern Darul Mukhlisin</td>
+                <td>-</td>
+                <td>2015 – 2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-cog"></i> Keterampilan Teknis
+        </h2>
+        <div class="cv-skills">
+          <div class="cv-skill-category">
+            <h3>Bahasa Pemrograman</h3>
+            <p>HTML, CSS, JavaScript, PHP, Laravel</p>
+          </div>
+          <div class="cv-skill-category">
+            <h3>Database</h3>
+            <p>MySQL</p>
+          </div>
+          <div class="cv-skill-category">
+            <h3>Tools & Platform</h3>
+            <p>Git, GitHub, Visual Studio Code</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Experience Section -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-project-diagram"></i> Pengalaman Proyek
+        </h2>
+        <div class="cv-projects">
+          <div class="cv-project">
+            <h3 class="cv-project-title">
+              Website Absensi Karyawan Berbasis Web
+            </h3>
+            <p class="cv-project-tech">
+              <strong>Teknologi:</strong> HTML, CSS, PHP, MySQL
             </p>
-        </div>
+            <ul class="cv-project-details">
+              <li>Mengembangkan sistem absensi karyawan berbasis web</li>
+              <li>Fitur: Login, input data absensi, laporan kehadiran</li>
+              <li>Tanggung jawab: Database management, debugging sistem</li>
+            </ul>
+          </div>
 
-        <div class="section">
-            <h2>PENDIDIKAN</h2>
-            <p><strong>Teknik Informatika</strong> - Universitas Alma Ata Yogyakarta (2024 - Sekarang)</p>
-            <p><strong>Pondok Pesantren</strong> - Darul Mukhlisin, Bandung Barat (2016 - 2022)</p>
-        </div>
+          <div class="cv-project">
+            <h3 class="cv-project-title">Website Profil Sekolah</h3>
+            <p class="cv-project-tech">
+              <strong>Teknologi:</strong> HTML, CSS, JavaScript
+            </p>
+            <ul class="cv-project-details">
+              <li>Website informasi untuk sekolah</li>
+              <li>Fitur: Halaman statis & dinamis, responsive design</li>
+            </ul>
+          </div>
 
-        <div class="section">
-            <h2>KEAHLIAN TEKNIS</h2>
-            <ul>
-                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React</li>
-                <li><strong>Backend:</strong> Python, Node.js</li>
-                <li><strong>Design:</strong> Figma, Adobe XD</li>
-                <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-                <li><strong>Metodologi:</strong> Agile, Scrum</li>
+          <div class="cv-project">
+            <h3 class="cv-project-title">HelpDesk Kampus</h3>
+            <p class="cv-project-tech">
+              <strong>Teknologi:</strong> Laravel, MySQL, Bootstrap
+            </p>
+            <ul class="cv-project-details">
+              <li>Sistem pelayanan dan pengaduan untuk kampus</li>
+              <li>Fitur: Pelaporan online, tracking status pengaduan</li>
             </ul>
-        </div>
+          </div>
 
-        <div class="section">
-            <h2>PENGALAMAN</h2>
-            <p><strong>UI Designer</strong> (2024)</p>
-            <ul>
-                <li>Mendesain antarmuka web yang intuitif mengunakan Figma dan Adobe XD</li>
-                <li>Berkolaborasi dengan developer untuk implementasi design</li>
+          <div class="cv-project">
+            <h3 class="cv-project-title">E-Math Learning</h3>
+            <p class="cv-project-tech"><strong>Teknologi:</strong> Laravel</p>
+            <ul class="cv-project-details">
+              <li>Platform pembelajaran matematika online</li>
             </ul>
-            <p><strong>Web Developer Intern</strong> - Freelance (2023)</p>
-            <ul>
-                <li>Mengembangkan website portfolio mengunakan HTML, CSS, dan JavaScript</li>
-                <li>Implementasi responsive design untuk berbagai device</li>
-            </ul>
-        </div>
+          </div>
 
-        <div class="section">
-            <h2>PROYEK</h2>
-            <p><strong>Personal Budget Calculator</strong></p>
-            <ul>
-                <li>Aplikasi desktop offline untuk tracking income dan expenses</li>
-                <li>Teknologi: Python, Tkinter, SQLite</li>
+          <div class="cv-project">
+            <h3 class="cv-project-title">Tahfidz App</h3>
+            <ul class="cv-project-details">
+              <li>Aplikasi pencatatan tahfidz untuk pondok pesantren</li>
             </ul>
-            
-            <p><strong>Dynamic To-Do List Application</strong></p>
-            <ul>
-                <li>Aplikasi to-do list modern dengan drag & drop functionality</li>
-                <li>Teknologi: HTML5, CSS3, JavaScript, LocalStorage</li>
-            </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="section">
-            <h2>SERTIFIKASI</h2>
-            <ul>
-                <li>Front-End Developer Learning Path - Dicoding Indonesia (2024)</li>
-                <li>Hackathon 2025 Winner - Google Developer Student Club (2025)</li>
-                <li>AI for Everyone - Coursera (2024)</li>
-            </ul>
+      <!-- Organization Experience Section -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-users"></i> Pengalaman Organisasi
+        </h2>
+        <div class="cv-table-container">
+          <table class="cv-table">
+            <thead>
+              <tr>
+                <th>Organisasi</th>
+                <th>Peran</th>
+                <th>Tahun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HIMATIK – Himpunan Mahasiswa Teknik Informatika</td>
+                <td>Anggota</td>
+                <td>2025 – Sekarang</td>
+              </tr>
+              <tr>
+                <td>IKADM – Ikatan Alumni Darul Mukhlisin</td>
+                <td>Anggota</td>
+                <td>2022 – Sekarang</td>
+              </tr>
+              <tr>
+                <td>KPMBR – Keluarga Pelajar & Mahasiswa Bandung Raya</td>
+                <td>Sekretaris Umum</td>
+                <td>2026 – Sekarang</td>
+              </tr>
+              <tr>
+                <td>UKM Futsal UAA</td>
+                <td>Anggota</td>
+                <td>2024 – Sekarang</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </section>
     </div>
-</body>
+
+    <!-- Download Button (Optional: for web view) -->
+    <div class="cv-download-container">
+      <button class="cv-download-btn" onclick="window.print()">
+        <i class="fas fa-download"></i> Download CV
+      </button>
+    </div>
+  </body>
 </html>
+"

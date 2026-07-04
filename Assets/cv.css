@@ -1,0 +1,299 @@
+"/* CV Styles - Zaenal Wahyudin */
+:root {
+    --primary-color: #0046FF;
+    --primary-dark: #0033CC;
+    --text-color: #333333;
+    --light-gray: #f5f5f5;
+    --border-color: #e0e0e0;
+    --white: #ffffff;
+    --secondary-color: #666666;
+}
+
+/* Profile Image Styles */
+.cv-profile-image {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cv-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Header Styles */
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.cv-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cv-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 10px 0 5px;
+}
+
+.cv-location {
+    font-size: 16px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cv-contact {
+    text-align: right;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.cv-contact-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.cv-contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cv-contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cv-section-title i {
+    font-size: 18px;
+}
+
+/* Profile Text */
+.cv-profile-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Table Styles */
+.cv-table-container {
+    overflow-x: auto;
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.cv-table th,
+.cv-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cv-table th {
+    background-color: var(--light-gray);
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.cv-table td {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.cv-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Skills Section */
+.cv-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.cv-skill-category {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cv-skill-category h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.cv-skill-category p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Projects Section */
+.cv-projects {
+    margin-top: 10px;
+}
+
+.cv-project {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cv-project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cv-project-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.cv-project-tech {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.cv-project-details {
+    margin-left: 20px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.cv-project-details li {
+    margin-bottom: 5px;
+}
+
+/* Download Button */
+.cv-download-container {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.cv-download-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.cv-download-btn i {
+    font-size: 16px;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .cv-header {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .cv-download-container {
+        display: none;
+    }
+
+    .cv-table th {
+        background-color: #f0f0f0 !important;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 12px;
+        color: #666;
+    }
+}
+"
