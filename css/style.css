@@ -226,7 +226,7 @@ img.brand-mark { object-fit: cover; }
 .hero-cutout::before {
   content: ""; position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%);
   width: min(560px, 115vw); aspect-ratio: 1 / 1; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(255, 184, 0, 0.45), rgba(255, 184, 0, 0.12) 55%, transparent 75%);
+  background: radial-gradient(closest-side, rgba(43, 107, 255, 0.5), rgba(43, 107, 255, 0.12) 55%, transparent 75%);
   filter: blur(24px); pointer-events: none;
 }
 .hero-cutout img {
