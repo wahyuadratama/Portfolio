@@ -235,6 +235,13 @@ img.brand-mark { object-fit: cover; }
   background: linear-gradient(to bottom, transparent, var(--bg) 90%);
   pointer-events: none;
 }
+/* Mode terang: glow & bayangan foto dilembutkan agar tidak kotor */
+[data-theme="light"] .hero-cutout::before {
+  background: radial-gradient(closest-side, rgba(43, 107, 255, 0.18), rgba(43, 107, 255, 0.05) 55%, transparent 75%);
+}
+[data-theme="light"] .hero-cutout img {
+  filter: drop-shadow(0 24px 44px rgba(15, 21, 51, 0.16));
+}
 .hero-cutout img {
   position: relative; display: block;
   width: min(360px, 80vw); height: auto;
