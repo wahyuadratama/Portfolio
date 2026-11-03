@@ -128,7 +128,7 @@ function initTheme() {
   const btn = $("#theme-toggle");
   const icon = $("#theme-icon");
   const saved = localStorage.getItem("zw-theme");
-  const initial = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const initial = saved || "dark";
   const apply = (t) => {
     root.setAttribute("data-theme", t);
     localStorage.setItem("zw-theme", t);
@@ -238,30 +238,6 @@ function initCounters() {
     });
   }, { threshold: 0.6 });
   counters.forEach((c) => io.observe(c));
-}
-
-/* ================= TYPING ================= */
-function initTyping() {
-  const el = $("#typed-role");
-  if (!el || prefersReducedMotion) return;
-  const phrases = ["Web Developer & UI Designer", "Next.js • Flutter • Node.js", "Mahasiswa Informatika — Alma Ata"];
-  let pi = 0, ci = phrases[0].length, deleting = true;
-  // mulai dari teks penuh lalu hapus → ketik ulang (efek hidup)
-  const tick = () => {
-    const cur = phrases[pi];
-    if (deleting) {
-      ci--;
-      el.textContent = cur.slice(0, ci);
-      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(tick, 350); return; }
-      setTimeout(tick, 32);
-    } else {
-      ci++;
-      el.textContent = phrases[pi].slice(0, ci);
-      if (ci === phrases[pi].length) { deleting = true; setTimeout(tick, 2200); return; }
-      setTimeout(tick, 60);
-    }
-  };
-  setTimeout(tick, 2500);
 }
 
 /* ================= PROJECTS ================= */
@@ -437,7 +413,6 @@ function init() {
     initLightbox();
     initReveal();
     initCounters();
-    initTyping();
     initCopyEmail();
     refreshGitHubStats();
     console.log("Portfolio initialized.");
