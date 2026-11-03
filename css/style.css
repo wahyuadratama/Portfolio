@@ -133,6 +133,7 @@ p { margin: 0 0 1em; }
   transition: transform 0.25s ease;
 }
 .brand:hover .brand-mark { transform: rotate(-8deg) scale(1.06); }
+img.brand-mark { object-fit: cover; }
 .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .nav-link {
   position: relative; display: inline-flex; align-items: center; min-height: 44px;
@@ -217,14 +218,14 @@ p { margin: 0 0 1em; }
 .hero-chips i { color: var(--gold); }
 .hero-photo { display: flex; justify-content: center; }
 .photo-frame {
-  position: relative; width: min(320px, 78vw); aspect-ratio: 1 / 1;
+  position: relative; width: min(360px, 80vw); aspect-ratio: 4 / 5;
   border-radius: 28px; padding: 10px;
   background: linear-gradient(135deg, #1b00a1, var(--gold));
   box-shadow: var(--shadow-lg);
   animation: floaty 7s ease-in-out infinite;
 }
 @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-.photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; border-radius: 20px; }
 .scroll-hint {
   position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
   color: var(--muted); font-size: 1.1rem; animation: bob 1.8s ease-in-out infinite;
@@ -395,7 +396,7 @@ p { margin: 0 0 1em; }
 .testi-card em { font-style: normal; color: var(--muted); font-size: 0.82rem; }
 
 /* ---------- Contact ---------- */
-.contact-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: start; max-width: 680px; margin-inline: auto; }
 .contact-info { display: flex; flex-direction: column; gap: 14px; }
 .c-row {
   display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: center;
@@ -422,22 +423,6 @@ p { margin: 0 0 1em; }
   transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, background-color 0.35s ease;
 }
 .socials a:hover { transform: translateY(-4px) rotate(-6deg); color: var(--primary); border-color: var(--primary); }
-.contact-form {
-  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 28px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px;
-  transition: background-color 0.35s ease;
-}
-.f-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
-.contact-form input, .contact-form textarea {
-  width: 100%; font-family: var(--font-sans); font-size: 0.95rem; color: var(--text);
-  background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
-  padding: 13px 16px; min-height: 48px; resize: vertical;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.35s ease;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft);
-}
-
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--border); padding: 30px 0; background: var(--bg); transition: background-color 0.35s ease; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -523,7 +508,7 @@ p { margin: 0 0 1em; }
   .hero { padding-top: calc(var(--nav-h) + 36px); }
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .hero-photo { order: -1; }
-  .photo-frame { width: min(240px, 66vw); animation: none; }
+  .photo-frame { width: min(280px, 72vw); animation: none; }
   .hero-cta .btn { flex: 1 1 100%; }
   .about-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .resume-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
@@ -541,7 +526,6 @@ p { margin: 0 0 1em; }
   .project-grid, .cert-grid, .testi-grid { grid-template-columns: minmax(0, 1fr); }
   .gh-stats { grid-template-columns: minmax(0, 1fr); }
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .f-row { grid-template-columns: minmax(0, 1fr); }
   .hero-stats { flex-wrap: wrap; gap: 14px 0; }
   .hstat { flex: 1 1 40%; }
   .hstat + .hstat { border-left: none; padding-left: 0; }
