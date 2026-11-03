@@ -224,10 +224,10 @@ img.brand-mark { object-fit: cover; }
 /* Hero cutout — foto tanpa bingkai kotak */
 .hero-cutout { position: relative; display: flex; justify-content: center; }
 .hero-cutout::before {
-  content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-  width: min(420px, 88vw); aspect-ratio: 1 / 1; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(255, 184, 0, 0.32), rgba(255, 184, 0, 0.07) 55%, transparent 78%);
-  filter: blur(28px); pointer-events: none;
+  content: ""; position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%);
+  width: min(560px, 115vw); aspect-ratio: 1 / 1; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 184, 0, 0.45), rgba(255, 184, 0, 0.12) 55%, transparent 75%);
+  filter: blur(24px); pointer-events: none;
 }
 .hero-cutout img {
   position: relative; display: block;
