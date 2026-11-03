@@ -229,6 +229,12 @@ img.brand-mark { object-fit: cover; }
   background: radial-gradient(closest-side, rgba(43, 107, 255, 0.55), rgba(43, 107, 255, 0.14) 55%, transparent 75%);
   filter: blur(24px); pointer-events: none;
 }
+/* Pelebur bawah foto — potongan terlihat smooth, menyatu dengan background */
+.hero-cutout::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%;
+  background: linear-gradient(to bottom, transparent, var(--bg) 90%);
+  pointer-events: none;
+}
 .hero-cutout img {
   position: relative; display: block;
   width: min(360px, 80vw); height: auto;
