@@ -231,21 +231,17 @@ img.brand-mark { object-fit: cover; }
 }
 /* Pelebur bawah foto — potongan terlihat smooth, menyatu dengan background */
 .hero-cutout::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%;
-  background: linear-gradient(to bottom, transparent, var(--bg) 90%);
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 36%;
+  background: linear-gradient(to bottom, transparent, var(--bg) 92%);
   pointer-events: none;
 }
-/* Mode terang: glow & bayangan foto dilembutkan agar tidak kotor */
+/* Mode terang: glow dilembutkan agar tidak kotor */
 [data-theme="light"] .hero-cutout::before {
   background: radial-gradient(closest-side, rgba(43, 107, 255, 0.18), rgba(43, 107, 255, 0.05) 55%, transparent 75%);
-}
-[data-theme="light"] .hero-cutout img {
-  filter: drop-shadow(0 24px 44px rgba(15, 21, 51, 0.16));
 }
 .hero-cutout img {
   position: relative; display: block;
   width: min(360px, 80vw); height: auto;
-  filter: drop-shadow(0 32px 54px rgba(0, 0, 0, 0.5));
   animation: hero-float 7s ease-in-out infinite;
 }
 @keyframes hero-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
