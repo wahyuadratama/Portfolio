@@ -20,79 +20,124 @@ const loading = document.getElementById("loading");
 const projectsData = [
   {
     id: 1,
-    title: "Personal Budget Calculator",
+    title: "Website Pondok Pesantren Modern Darul Mukhlisin",
     description:
-      "Aplikasi desktop offline untuk tracking income dan expenses dengan interface yang user-friendly. Membantu pengguna mengelola keuangan personal dengan mudah dan efisien.",
-    image: "images/offline kalkulator.png",
+      "Website resmi pondok pesantren dengan CMS penuh: manajemen berita, galeri, data guru, dan pendaftaran PSB online dengan role admin. Berjalan live di VPS dengan backup database otomatis.",
+    image: "images/project-darul-mukhlisin.png",
     category: "web",
-    technologies: ["Python", "Tkinter", "SQLite"],
+    technologies: ["Next.js", "Express", "MySQL", "PM2"],
     metrics: [
-      { icon: "fas fa-users", value: "100+", label: "Active Users" },
-      {
-        icon: "fas fa-database",
-        value: "1000+",
-        label: "Transactions Tracked",
-      },
-      { icon: "fas fa-clock", value: "50%", label: "Faster Data Entry" },
+      { icon: "fas fa-check-circle", value: "Live", label: "Production" },
+      { icon: "fas fa-newspaper", value: "55+", label: "Berita" },
+      { icon: "fas fa-user-shield", value: "3", label: "Role Admin" },
     ],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/wahyuadratama/websekolahdmu",
+    demo: "https://darulmukhlisin.ponpes.id",
   },
   {
     id: 2,
-    title: "Dynamic To-Do List Web Application",
+    title: "Website IKADM (Ikatan Keluarga Alumni)",
     description:
-      "Aplikasi to-do list modern dengan drag & drop functionality, local storage persistence, dan animasi yang smooth. Meningkatkan produktivitas dengan interface yang intuitif.",
-    image: "images/todolist.png",
+      "Rebuild total website alumni Darul Mukhlisin: 7 halaman generasi dengan tema warna dinamis, form pendaftaran alumni, struktur pengurus, agenda, dan CMS lengkap.",
+    image: "images/project-ikadm.png",
     category: "web",
-    technologies: ["HTML5", "CSS3", "JavaScript", "LocalStorage"],
+    technologies: ["Next.js", "Express", "MySQL"],
     metrics: [
-      { icon: "fas fa-bolt", value: "40%", label: "Productivity Boost" },
-      { icon: "fas fa-mobile-alt", value: "100%", label: "Mobile Responsive" },
-      { icon: "fas fa-tachometer-alt", value: "1.2s", label: "Load Time" },
+      { icon: "fas fa-check-circle", value: "Live", label: "Production" },
+      { icon: "fas fa-users", value: "7", label: "Halaman Generasi" },
+      { icon: "fas fa-cogs", value: "CMS", label: "Lengkap" },
     ],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/wahyuadratama/ikadm-website",
+    demo: "https://ikadm.darulmukhlisin.ponpes.id",
   },
   {
     id: 3,
-    title: "Portfolio Website",
+    title: "Bot WhatsApp (botwa)",
     description:
-      "Portfolio website modern dan responsive dengan smooth animations, dark theme yang elegant, dan performance optimization. Menampilkan skills dan projects dengan cara yang menarik dan profesional.",
-    image: "images/wahyu.jpg",
+      "Bot WhatsApp modular berbasis Baileys dengan 30 fitur, termasuk game Werewolf multiplayer lengkap dengan peran, voting, dan timer otomatis. Berjalan 24/7 di VPS.",
+    image: "images/project-botwa.png",
     category: "web",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    technologies: ["Node.js", "Baileys", "PM2"],
     metrics: [
-      { icon: "fas fa-rocket", value: "95+", label: "Lighthouse Score" },
-      { icon: "fas fa-eye", value: "500+", label: "Monthly Visitors" },
-      { icon: "fas fa-star", value: "4.8/5", label: "User Rating" },
+      { icon: "fas fa-plug", value: "30", label: "Fitur" },
+      { icon: "fas fa-gamepad", value: "Werewolf", label: "Game" },
+      { icon: "fas fa-server", value: "24/7", label: "VPS" },
     ],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/wahyuadratama/botwa",
+    demo: "",
+  },
+  {
+    id: 4,
+    title: "TugasKu — Aplikasi To-Do List Flutter",
+    description:
+      "Aplikasi Android to-do list dengan deadline & pengingat, sub-tugas, tugas berulang, kategori, dan mode gelap/terang. Diuji langsung di perangkat Android.",
+    image: "images/project-tugasku.png",
+    category: "mobile",
+    technologies: ["Flutter", "Dart", "Android"],
+    metrics: [
+      { icon: "fas fa-mobile-alt", value: "Android", label: "Platform" },
+      { icon: "fas fa-bell", value: "Reminder", label: "Notifikasi" },
+      { icon: "fas fa-moon", value: "Dark", label: "Mode" },
+    ],
+    github: "https://github.com/wahyuadratama/aplikasi_tugasku",
+    demo: "",
+  },
+  {
+    id: 5,
+    title: "The Jogja Sun — Prototipe Portal Berita",
+    description:
+      "Prototipe portal berita Yogyakarta di Figma: 9 layar (homepage, kategori, detail berita, video, pencarian, CMS admin) plus logo resmi dan proposal pembangunan ke klien.",
+    image: "images/project-jogja-sun.png",
+    category: "ui",
+    technologies: ["Figma", "UI Design", "Prototyping"],
+    metrics: [
+      { icon: "fas fa-pen-nib", value: "9", label: "Layar Figma" },
+      { icon: "fas fa-palette", value: "Logo", label: "Final" },
+      { icon: "fas fa-file-invoice", value: "RAB", label: "Proposal" },
+    ],
+    github: "",
+    demo: "",
+  },
+  {
+    id: 6,
+    title: "Jadwal Nonton Persib",
+    description:
+      "Web jadwal pertandingan Persib Bandung: jadwal lengkap, klasemen 3 kompetisi, panel live score, dan panduan nonton gratis via siaran resmi. Responsif untuk mobile.",
+    image: "images/project-jadwal-persib.png",
+    category: "web",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    metrics: [
+      { icon: "fas fa-futbol", value: "3", label: "Klasemen" },
+      { icon: "fas fa-tv", value: "Resmi", label: "Siaran" },
+      { icon: "fas fa-mobile-alt", value: "100%", label: "Responsif" },
+    ],
+    github: "",
+    demo: "https://muse.ai/s/jadwal-nonton-persib-sxe6xaxixxxy4xoro/hZS-pL8JsV5tp3cUHiLc1LfbBPI3Q2k7zGDakgFmWBQ",
   },
 ];
 
 // ===== CERTIFICATES DATA =====
+// Judul sesuai isi dokumen sertifikat aslinya (diperiksa dari file gambar)
 const certificatesData = [
   {
     id: 1,
-    title: "Use Generative AI For Software Development",
+    title: "Use Generative AI for Software Development",
     issuer: "IBM SkillsBuild",
-    year: "2024",
+    year: "2025",
     image: "images/CER 2.png",
   },
   {
     id: 2,
-    title: "Hackathon 2025 Winner",
+    title: "Code Generation and Optimization Using IBM Granite",
     issuer: "IBM SkillsBuild",
     year: "2025",
     image: "images/CER 1.png",
   },
   {
     id: 3,
-    title: "AI for Everyone",
+    title: "IBM Granite Models for Software Development",
     issuer: "IBM SkillsBuild",
-    year: "2024",
+    year: "2025",
     image: "images/CER 3.png",
   },
 ];
@@ -227,19 +272,28 @@ function createProjectElement(project) {
   `
     : "";
 
+  // Hanya tampilkan tombol link yang benar-benar ada (hindari link mati "#")
+  const githubLink = project.github
+    ? `
+                    <a href="${project.github}" class="portfolio-link" target="_blank" rel="noopener" title="Lihat di GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>`
+    : "";
+  const demoLink = project.demo
+    ? `
+                    <a href="${project.demo}" class="portfolio-link" target="_blank" rel="noopener" title="Lihat live demo">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>`
+    : "";
+
   projectDiv.innerHTML = `
         <div class="portfolio-image">
             <img src="${project.image}" alt="${project.title}" loading="lazy">
             <div class="portfolio-overlay">
-                <div class="portfolio-links">
-                    <a href="${project.github}" class="portfolio-link" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="${project.demo}" class="portfolio-link" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
+                <div class="portfolio-links">${githubLink}${demoLink}
                 </div>
             </div>
+        </div>
         <div class="portfolio-content">
             <h3 class="portfolio-title">${project.title}</h3>
             <p class="portfolio-description">${project.description}</p>
@@ -774,16 +828,11 @@ function initDownloadCV() {
 
     // Simulasi download (ganti dengan URL CV asli Anda)
     setTimeout(() => {
-      // Ganti 'assets/CV-Zaenal-Wahyudin.pdf' dengan path CV Anda yang sebenarnya
-      const cvUrl = "assets/CV-Zaenal-Wahyudin.pdf";
-      // Buat link download temporary
-      const link = document.createElement("a");
-      link.href = cvUrl;
-      link.download = "CV-Zaenal-Wahyudin.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      showNotification("CV berhasil diunduh! ✅", "success");
+      // CV tersedia sebagai halaman HTML di folder Assets/
+      const cvUrl = "Assets/CV-Zaenal-Wahyudin.html";
+      // Buka di tab baru
+      window.open(cvUrl, "_blank", "noopener");
+      showNotification("CV dibuka di tab baru! ✅", "success");
     }, 1000);
   });
 }
@@ -846,59 +895,57 @@ function initWhatsAppContact() {
 }
 
 // === GITHUB STATS FUNCTIONS =====
+// Angka di HTML sudah diisi nilai asli (terverifikasi via API saat build).
+// Fungsi ini hanya me-refresh jika API merespons valid; jika gagal,
+// angka statis dibiarkan apa adanya (tidak pernah ditimpa "0"/nilai palsu).
+function setTextIfValid(id, value) {
+  const el = document.getElementById(id);
+  if (el && value !== undefined && value !== null && value !== "") {
+    el.textContent = value;
+  }
+}
+
 async function fetchGitHubStats() {
-  const username = "wahyuadratama"; // Ganti dengan username GitHub Anda
+  const username = "wahyuadratama";
   try {
-    // Fetch user data
     const userResponse = await fetch(
       `https://api.github.com/users/${username}`,
     );
+    if (!userResponse.ok) throw new Error("GitHub API: " + userResponse.status);
     const userData = await userResponse.json();
+    if (typeof userData.public_repos !== "number") {
+      throw new Error("Respons API tidak valid (kemungkinan rate limit)");
+    }
 
-    // Fetch repositories
     const reposResponse = await fetch(
       `https://api.github.com/users/${username}/repos?per_page=100`,
     );
+    if (!reposResponse.ok)
+      throw new Error("GitHub API: " + reposResponse.status);
     const reposData = await reposResponse.json();
+    if (!Array.isArray(reposData)) throw new Error("Respons API tidak valid");
 
-    // Calculate total stars
     const totalStars = reposData.reduce(
-      (acc, repo) => acc + repo.stargazers_count,
+      (acc, repo) => acc + (repo.stargazers_count || 0),
       0,
     );
 
-    // Update DOM
-    document.getElementById("github-repos").textContent =
-      userData.public_repos || 0;
-    document.getElementById("github-stars").textContent = totalStars || 0;
-    document.getElementById("github-followers").textContent =
-      userData.followers || 0;
-    document.getElementById("github-contributions").textContent = "150+"; // GitHub API tidak menyediakan ini secara langsung
+    setTextIfValid("github-repos", userData.public_repos);
+    setTextIfValid("github-stars", totalStars);
+    setTextIfValid("github-followers", userData.followers);
 
-    // Update profile card
     if (userData.avatar_url) {
       document.getElementById("github-avatar").src = userData.avatar_url;
     }
-    document.getElementById("github-name").textContent =
-      userData.name || username;
-    document.getElementById("github-username").textContent =
-      `@${userData.login}`;
-    document.getElementById("github-bio").textContent =
-      userData.bio || "No bio available";
-    document.getElementById("github-location").textContent =
-      userData.location || "Location not set";
+    setTextIfValid("github-name", userData.name || username);
+    setTextIfValid("github-username", `@${userData.login}`);
+    setTextIfValid("github-bio", userData.bio);
+    setTextIfValid("github-location", userData.location);
 
-    console.log("✅ GitHub stats loaded successfully");
+    console.log("GitHub stats refreshed from API");
   } catch (error) {
-    console.error("❌ Error fetching GitHub stats:", error);
-    // Set default values on error
-    document.getElementById("github-repos").textContent = "10+";
-    document.getElementById("github-stars").textContent = "25+";
-    document.getElementById("github-followers").textContent = "15+";
-    document.getElementById("github-contributions").textContent = "150+";
-    document.getElementById("github-name").textContent = "Zaenal Wahyudin";
-    document.getElementById("github-bio").textContent =
-      "Passionate developer | Open source enthusiast";
+    // Biarkan angka statis di HTML — jangan tampilkan "..." atau angka palsu
+    console.warn("GitHub stats memakai angka statis:", error.message);
   }
 }
 
