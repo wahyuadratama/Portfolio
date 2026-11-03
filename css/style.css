@@ -235,9 +235,9 @@ img.brand-mark { object-fit: cover; }
   background: linear-gradient(to bottom, transparent, var(--bg) 92%);
   pointer-events: none;
 }
-/* Mode terang: glow dilembutkan agar tidak kotor */
+/* Mode terang: glow dihilangkan, tampil bersih */
 [data-theme="light"] .hero-cutout::before {
-  background: radial-gradient(closest-side, rgba(43, 107, 255, 0.18), rgba(43, 107, 255, 0.05) 55%, transparent 75%);
+  display: none;
 }
 .hero-cutout img {
   position: relative; display: block;
