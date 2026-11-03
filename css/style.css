@@ -214,17 +214,15 @@ img.brand-mark { object-fit: cover; }
 /* Hero cutout — foto tanpa bingkai kotak */
 .hero-cutout { position: relative; display: flex; justify-content: center; }
 .hero-cutout::before {
-  content: ""; position: absolute; bottom: 2%; left: 50%; transform: translateX(-50%);
-  width: min(400px, 84vw); aspect-ratio: 1 / 1; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(27, 0, 161, 0.38), transparent 72%);
-  filter: blur(12px); pointer-events: none;
+  content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: min(460px, 90vw); aspect-ratio: 1 / 1; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(27, 0, 161, 0.55), rgba(106, 77, 255, 0.18) 55%, transparent 72%);
+  filter: blur(16px); pointer-events: none;
 }
 .hero-cutout img {
   position: relative; display: block;
-  width: min(400px, 82vw); height: auto;
-  filter: drop-shadow(0 28px 44px rgba(0, 0, 0, 0.45));
-  -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 99%);
-  mask-image: linear-gradient(to bottom, #000 90%, transparent 99%);
+  width: min(460px, 86vw); height: auto;
+  filter: drop-shadow(0 32px 54px rgba(0, 0, 0, 0.5));
   animation: hero-float 7s ease-in-out infinite;
 }
 @keyframes hero-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
@@ -510,7 +508,7 @@ img.brand-mark { object-fit: cover; }
   .hero { padding-top: calc(var(--nav-h) + 36px); }
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .hero-photo { order: -1; }
-  .hero-cutout img { width: min(300px, 74vw); animation: none; }
+  .hero-cutout img { width: min(340px, 78vw); animation: none; }
   .hero-cta .btn { flex: 1 1 100%; }
   .about-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .resume-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
